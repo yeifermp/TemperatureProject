@@ -26,6 +26,7 @@ namespace Proxy
             services.Configure<MqttServerOptions>(Configuration.GetSection(nameof(MqttServerOptions)));
             services.Configure<MqttTopicsOptions>(Configuration.GetSection(nameof(MqttTopicsOptions)));
             services.Configure<CosmosDbOptions>(Configuration.GetSection(nameof(CosmosDbOptions)));
+            services.Configure<IotHubOptions>(Configuration.GetSection(nameof(IotHubOptions)));
             services.AddHostedService<MqttClientHostedService>();
             services.AddTransient<ITelemetricDataRepository, TelemetricDataRepository>();
             services.AddControllers();

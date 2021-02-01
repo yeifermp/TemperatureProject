@@ -13,9 +13,6 @@
         "packagesPath": "/home/yeifer/.nuget/packages/",
         "outputPath": "/home/yeifer/Projects/SmartHome/Proxy/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/home/yeifer/.nuget/NuGet/NuGet.Config"
         ],
@@ -48,6 +45,14 @@
             "MQTTnet": {
               "target": "Package",
               "version": "[3.0.13, )"
+            },
+            "Microsoft.Azure.Devices": {
+              "target": "Package",
+              "version": "[1.29.0, )"
+            },
+            "Microsoft.Azure.Devices.Client": {
+              "target": "Package",
+              "version": "[1.34.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
