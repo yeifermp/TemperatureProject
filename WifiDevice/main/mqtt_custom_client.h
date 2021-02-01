@@ -22,7 +22,7 @@
 #define BUF_SIZE 256
 
 static const char * MQTT_CLIENT_TAG = "MQTT_CLIENT";
-static const int MQTT_PORT = 1885;
+static const int MQTT_PORT = 1883;
 static const char * TEMP_SENSOR_TOPIC = "sensors/temp";
 static const char * DISPLAY_TOPIC = "peripherals/lcd_display";
 static const char * LED_TOPIC = "peripherals/led0";
@@ -118,6 +118,9 @@ static esp_err_t mqtt_event_handler_cb (esp_mqtt_event_handle_t event) {
         break;
 
     case MQTT_EVENT_UNSUBSCRIBED:
+        break;
+
+    case MQTT_EVENT_ANY:
         break;
     }
 

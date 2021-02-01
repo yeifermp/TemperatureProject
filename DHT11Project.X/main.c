@@ -106,8 +106,7 @@ char data_in[BUF_SIZE];
 char data_out[50];
 int dht_raw_data[40];
 uint8_t position;
-static const char * TEMP_SENSOR_CMD = "CMD+TEM=%d>>>";
-static const char * RH_SENSOR_CMD = "CMD+RH=%d>>>";
+static const char * TEMP_SENSOR_CMD = "CMD+TEM=%d>>>CMD+RH=%d>>>";
 static const char * LED0_CMD = "CMD+LED";
 static const char * END_CMD = ">>>";
 
@@ -185,11 +184,7 @@ void dht_read() {
     }
     
     memset(data_out, 0, BUF_SIZE_OUT);
-    sprintf(data_out, TEMP_SENSOR_CMD, temperature);
-    USART_SendString(data_out);
-    
-    memset(data_out, 0, BUF_SIZE_OUT);
-    sprintf(data_out, RH_SENSOR_CMD, relative_humidity);
+    sprintf(data_out, TEMP_SENSOR_CMD, temperature, relative_humidity);
     USART_SendString(data_out);
 }
 
