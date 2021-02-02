@@ -1,0 +1,5 @@
+source "/home/yeifer/esp/esp-idf/components/app_update/Kconfig.projbuild"
+source "/home/yeifer/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/yeifer/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/yeifer/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/yeifer/esp-azure/examples/iothub_client_sample_mqtt/main/Kconfig.projbuild"

@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/yeifer/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/yeifer/esp-azure/examples/iothub_client_sample_mqtt/build/bootloader",
+    "config_file":        "/home/yeifer/esp-azure/examples/iothub_client_sample_mqtt/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.3-dev-2940-g6e776946d",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/yeifer/esp/esp-idf/components/efuse/Kconfig;/home/yeifer/esp/esp-idf/components/esp32/Kconfig;/home/yeifer/esp/esp-idf/components/esp_common/Kconfig;/home/yeifer/esp/esp-idf/components/esp_system/Kconfig;/home/yeifer/esp/esp-idf/components/log/Kconfig;/home/yeifer/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/yeifer/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/yeifer/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/yeifer/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "hal", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/yeifer/esp/esp-idf/components/bootloader", "/home/yeifer/esp/esp-idf/components/bootloader_support", "/home/yeifer/esp/esp-idf/components/efuse", "/home/yeifer/esp/esp-idf/components/esp32", "/home/yeifer/esp/esp-idf/components/esp_common", "/home/yeifer/esp/esp-idf/components/esp_hw_support", "/home/yeifer/esp/esp-idf/components/esp_rom", "/home/yeifer/esp/esp-idf/components/esp_system", "/home/yeifer/esp/esp-idf/components/esptool_py", "/home/yeifer/esp/esp-idf/components/hal", "/home/yeifer/esp/esp-idf/components/log", "/home/yeifer/esp/esp-idf/components/bootloader/subproject/main", "/home/yeifer/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/yeifer/esp/esp-idf/components/partition_table", "/home/yeifer/esp/esp-idf/components/soc", "/home/yeifer/esp/esp-idf/components/spi_flash", "/home/yeifer/esp/esp-idf/components/xtensa", "" ]
+}
